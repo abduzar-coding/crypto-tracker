@@ -28,7 +28,9 @@ function Home() {
 
       {/* ⚠️ Usage Instruction */}
       <div className="bg-yellow-100 text-yellow-800 dark:bg-yellow-200 dark:text-yellow-900 p-3 rounded-md text-sm text-center mb-6">
-        ⚠️ To avoid errors, please open coin details one at a time every 3 minutes. Refresh the page if needed.
+        ⚠️ This is a public demo using a free version of the CoinGecko API via a proxy.<br />
+        If someone else recently opened a coin page, you may not be able to access it due to shared rate limits.<br />
+        Please wait a few minutes and try again. Thank you for understanding!
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
