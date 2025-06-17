@@ -26,6 +26,11 @@ function Home() {
     <main className="p-4 max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold text-center mb-4 text-white">Crypto Tracker 🪙</h1>
 
+      {/* ⚠️ Usage Instruction */}
+      <div className="bg-yellow-100 text-yellow-800 dark:bg-yellow-200 dark:text-yellow-900 p-3 rounded-md text-sm text-center mb-6">
+        ⚠️ To avoid errors, please open coin details one at a time every 3 minutes. Refresh the page if needed.
+      </div>
+
       <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
         <SearchBar search={search} setSearch={setSearch} />
         <CurrencySelector currency={currency} setCurrency={setCurrency} />
