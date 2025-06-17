@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/coin",
+      "destination": "/api/coin.js"
+    }
+  ]
+}
