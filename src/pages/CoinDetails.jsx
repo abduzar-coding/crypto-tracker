@@ -20,11 +20,13 @@ function CoinDetails() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
+  const API_BASE = 'https://corsproxy.io/?https://api.coingecko.com/api/v3';
+
   useEffect(() => {
     const fetchCoinDetails = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/coin?id=${id}`);
+        const res = await fetch(`${API_BASE}/coins/${id}`);
         if (!res.ok) throw new Error('Coin not found');
         const data = await res.json();
         setCoin(data);
@@ -38,8 +40,9 @@ function CoinDetails() {
 
     const fetchChart = async () => {
       try {
-        const res = await fetch(`/api/coin?id=${id}&chart=true`);
-        if (!res.ok) throw new Error('Chart fetch failed');
+        const res = await fetch(
+          `${API_BASE}/coins/${id}/market_chart?vs_currency=usd&days=7`
+        );
         const data = await res.json();
         const labels = data.prices.map((item) =>
           new Date(item[0]).toLocaleDateString()
