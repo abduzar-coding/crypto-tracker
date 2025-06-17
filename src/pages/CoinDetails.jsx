@@ -107,6 +107,11 @@ function CoinDetails() {
           <Line data={chartData} options={{ responsive: true, plugins: { legend: { display: false } } }} />
         </div>
       )}
+
+      {/* ⚠️ Refresh Instruction */}
+      <div className="mt-6 bg-yellow-100 text-yellow-800 dark:bg-yellow-200 dark:text-yellow-900 p-3 rounded-md text-sm text-center">
+        ⚠️ Heads up: If data or charts stop working after viewing multiple coins, try refreshing the page to reset.
+      </div>
     </div>
   );
 }
