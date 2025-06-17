@@ -30,7 +30,7 @@ function Home() {
       <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-lg text-sm text-white text-center mb-6 shadow">
         ⚠️ This is a public demo using a free version of the CoinGecko API via a proxy.<br />
         If someone else recently opened a coin page, you may not be able to access it due to shared rate limits.<br />
-        Please wait a few minutes and try again. Thank you for understanding 🙏
+        Please wait a few minutes and try again. Thank you for understanding!
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-between mb-6">
